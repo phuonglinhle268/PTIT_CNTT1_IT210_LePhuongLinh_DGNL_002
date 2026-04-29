@@ -25,8 +25,8 @@ public class Artifact {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(min = 5, max = 150, message = "Tiêu đề chỉ từ 5-150 kí tự")
-    @NotBlank(message = "Tiêu đề không được để trống")
+    @Size(min = 5, max = 150, message = "Tên hiện vật chỉ từ 5-150 kí tự")
+    @NotBlank(message = "Tên không được để trống")
     @Column(name = "name")
     private String name;
 
